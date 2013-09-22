@@ -1,0 +1,17 @@
+{
+  "name": "GistFetcher",
+  "version": "0.0.1",
+  "description": "A jQuery plugin that fetches Gists",
+  "main": "src/jquery.gistfetcher.js",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-uglify": "~0.2.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/peterssonjesper/gistfetcher.git"
+  },
+  "author": "Jesper Petersson",
+  "license": "BSD",
+  "readmeFilename": "README.md"
+}
