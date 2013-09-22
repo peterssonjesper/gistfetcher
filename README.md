@@ -19,7 +19,6 @@ This is probably the most simple way to use the plugin.
 $("#mycode").gistFetcher({
     gistId: 3739539
 });
-
 ```
 
 ### Example 2 ###
@@ -35,8 +34,7 @@ If Github's servers are down, nothing will be shown in example 1. In this exampl
 ```javascript
 $('a[data-gist]').each(function() {
     $(this).gistFetcher({
-        gistId: $(this).data('gist');
+        gistId: $(this).data('gist')
     });
 });
-
 ```
