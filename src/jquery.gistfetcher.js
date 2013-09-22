@@ -76,7 +76,7 @@
 	$.fn.gistFetcher = function(options) {
 		options = init(options);
 		var $el = $(this[0]);
-		prepareFetch(options, $(this[0]));
+		prepareFetch(options, $el);
 		replaceDocumentWrite();
 		fetchGist(options.gistId);
 	};
