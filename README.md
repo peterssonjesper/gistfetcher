@@ -47,6 +47,6 @@ If you use bower, then simply run
 bower install gistfetcher
 ```
 
-If not, then simply download src/jquery.gistfetcher.js instad. Include src/jquery.gistfetcher.js as soon as jQuery has been loaded.
+If not, then just download src/jquery.gistfetcher.js and place it in your repository. Include src/jquery.gistfetcher.js as soon as jQuery has been loaded.
 
 Check out the examples directory if you want examples of how to install and use the plugin.
