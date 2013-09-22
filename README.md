@@ -27,7 +27,9 @@ $("#mycode").gistFetcher({
 If Github's servers are down, nothing will be shown in example 1. In this example (example 2) an anchor tag is provided if the servers aren't responding.
 
 ```html
-<a data-gist="3739539" href="https://gist.github.com/peterssonjesper/3739539">Take a look at my code</a>
+<a data-gist="3739539" href="https://gist.github.com/peterssonjesper/3739539">
+    Take a look at my code
+</a>
 ```
 
 ```javascript
