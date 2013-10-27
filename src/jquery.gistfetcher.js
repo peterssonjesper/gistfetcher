@@ -42,7 +42,6 @@
 	var fetchGist = function(options) {
 		var gistId = options.gistId;
 		var baseUrl = options.baseUrl;
-		console.log(baseUrl);
 		var embedUrl = baseUrl + gistId + '.js';
 		$.ajax({
 			url: embedUrl,
