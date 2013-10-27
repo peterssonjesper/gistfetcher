@@ -39,6 +39,17 @@ $('a[data-gist]').each(function() {
 });
 ```
 
+### Example 3 ###
+
+By default, a lookup to https://gist.github.com/[gist_id].s will result in a redirect to https://gist.github.com/[user]/[gist_id].js. If you want to get rid of this redirect, you can specify your own base URL.
+
+```javascript
+$("#mycode").gistFetcher({
+    gistId: 3739539,
+    baseUrl: 'https://gist.github.com/peterssonjesper/'
+});
+```
+
 Installation
 ------------
 
