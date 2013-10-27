@@ -10,7 +10,8 @@
 
 	var init = function(options) {
 		var defaultOptions = {
-			gistId: 0
+			gistId: 0,
+			baseUrl: 'https://gist.github.com/'
 		}
 
 		if(options && typeof options == 'object') {
@@ -38,10 +39,16 @@
 		return _numGistsFetched === _numGistsToFetch;
 	};
 
-	var fetchGist = function(gistId) {
-		var embedUrl = 'https://gist.github.com/' + gistId + '.js';
-		$.getScript(embedUrl, function() {
-			hasFetchedGistCallback();
+	var fetchGist = function(options) {
+		var gistId = options.gistId;
+		var baseUrl = options.baseUrl;
+		console.log(baseUrl);
+		var embedUrl = baseUrl + gistId + '.js';
+		$.ajax({
+			url: embedUrl,
+			dataType: 'script',
+			cache: true,
+			success: hasFetchedGistCallback
 		});
 	};
 
@@ -78,7 +85,7 @@
 		var $el = $(this[0]);
 		prepareFetch(options, $el);
 		replaceDocumentWrite();
-		fetchGist(options.gistId);
+		fetchGist(options);
 	};
 
 })(jQuery);
